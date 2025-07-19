@@ -62,18 +62,18 @@ const ProductForm = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-12">
+    <div className="container mx-auto px-6 py-12 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {/* Product Registration Form */}
-        <Card className="glass-card">
+        <Card className="bg-gradient-to-br from-slate-800 to-purple-800 border-purple-500/30 backdrop-blur-sm".
           <CardHeader className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <Package className="w-8 h-8 text-primary mr-2" />
-              <CardTitle className="text-2xl bg-gradient-text bg-clip-text text-transparent">
+              <Package className="w-8 h-8 text-cyan-400 mr-2" />
+              <CardTitle className="text-2xl bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 Product Registration
               </CardTitle>
             </div>
-            <CardDescription>
+            <CardDescription className="text-gray-300">
               Enter product details for blockchain verification
             </CardDescription>
           </CardHeader>
@@ -161,15 +161,15 @@ const ProductForm = () => {
         </Card>
 
         {/* Verification Results */}
-        <Card className="glass-card">
+        <Card className="bg-gradient-to-br from-slate-800 to-blue-800 border-blue-500/30 backdrop-blur-sm">
           <CardHeader className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <Shield className="w-8 h-8 text-primary mr-2" />
-              <CardTitle className="text-2xl bg-gradient-text bg-clip-text text-transparent">
+              <Shield className="w-8 h-8 text-green-400 mr-2" />
+              <CardTitle className="text-2xl bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Verification Status
               </CardTitle>
             </div>
-            <CardDescription>
+            <CardDescription className="text-gray-300">
               Real-time blockchain verification results
             </CardDescription>
           </CardHeader>
