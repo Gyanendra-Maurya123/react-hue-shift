@@ -217,11 +217,24 @@
     }
   }
 
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
   
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
   }
 }
